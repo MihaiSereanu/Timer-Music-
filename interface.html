@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="interface.css">
+  <title>Timer</title>
+</head>
+<body>
+  <div class="timer">
+    <div class="interface">
+      <div class="presets">
+        <button data-time="60" class="timer_button">Break 1</button>
+        <button data-time="300" class="timer_button">Break 5</button>
+        <button data-time="600" class="timer_button">Break 10</button>
+        <button data-time="1500" class="timer_button">Pomodoro</button>
+        <button data-time="3600" class="timer_button">Lunch</button>
+        <form name="customTime" id="custom">
+          <input type="number" name="minutes" autocomplete="off" placeholder="Enter minutes..">
+        </form>
+      </div>
+
+        <div class="display">
+          <h1 class="displayTime"></h1>
+          <p class="endBreakTime"></p>
+        </div>
+    </div>
+
+      <div class="controls">
+        <button class="_control">Restart</button>
+        <button class="_control">Pause</button>
+        <button class="_control">Stop</button>
+      </div>
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
